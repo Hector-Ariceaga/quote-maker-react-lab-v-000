@@ -5,3 +5,5 @@ function addQuote(quote: {}) {
     quote: quote
   }
 }
+
+export default addQuotes
