@@ -10,7 +10,7 @@ export default (state = [], action) => {
       quote = state.find(state => state.id === action.quoteId)
       return [...quote, {votes:  quote.votes + 1}]
     case 'DOWNVOTE_QUOTE':
-      
+
     default:
       return state;
   }
