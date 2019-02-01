@@ -9,7 +9,7 @@ export default (state = [], action) => {
     case 'UPVOTE_QUOTE':
       idx = state.indexOf(action.quoteId)
       quote = state.find(state => state.id === idx)
-      return [...state.quote, {votes:  quote.votes + 1}]
+      return [...quote, {votes:  quote.votes + 1}]
 
     default:
       return state;
