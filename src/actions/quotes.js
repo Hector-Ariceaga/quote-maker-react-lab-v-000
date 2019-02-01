@@ -7,7 +7,7 @@ export const addQuote = quote => {
 
 export const removeQuote = quoteID => {
   return {
-    type: 'REMOVE_QUOTE'
+    type: 'REMOVE_QUOTE',
     quoteID
   }
 }
