@@ -36,7 +36,7 @@ class QuoteForm extends Component {
                     <div className="col-md-5">
                       <textarea
                         className="form-control"
-                        value={this.state.content}
+                        value={this.state.content} name="content"
                       />
                     </div>
                   </div>
