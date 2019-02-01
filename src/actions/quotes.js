@@ -6,4 +6,4 @@ function addQuote(quote: {}) {
   }
 }
 
-export default addQuotes
+export default addQuote
