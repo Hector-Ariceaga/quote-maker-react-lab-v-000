@@ -11,3 +11,10 @@ export const removeQuote = quoteId => {
     quoteId
   }
 }
+
+export const upvoteQuote = quoteId => {
+  return {
+    type: 'UPVOTE_QUOTE',
+    quoteId
+  }
+}
