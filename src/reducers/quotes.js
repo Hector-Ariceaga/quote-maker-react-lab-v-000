@@ -6,7 +6,7 @@ export default (state = [], action) => {
     case 'ADD_QUOTE':
       return state.concat(action.quote);
     case 'REMOVE_QUOTE':
-      return 
+      return
     case 'UPVOTE_QUOTE':
 
     case 'DOWNVOTE_QUOTE':
