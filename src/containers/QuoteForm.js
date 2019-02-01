@@ -11,7 +11,9 @@ class QuoteForm extends Component {
   }
 
   handleOnChange = event => {
-    // Handle Updating Component State
+    this.setState({
+      [event.target.name]: event.target.value
+    })
   }
 
   handleOnSubmit = event => {
@@ -46,7 +48,9 @@ class QuoteForm extends Component {
                       <input
                         className="form-control"
                         type="text"
-                        value={this.state.author} name="author"
+                        value={this.state.author} 
+                        name="author"
+                        onChange={this.handleOnChange}
                       />
                     </div>
                   </div>
