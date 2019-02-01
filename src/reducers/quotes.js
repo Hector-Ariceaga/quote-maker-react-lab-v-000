@@ -8,7 +8,7 @@ export default (state = [], action) => {
       return [state.slice(0, idx), state.slice(idx + 1)]
     case 'UPVOTE_QUOTE':
       return [...state, state.vote + 1]
-      
+
     default:
       return state;
   }
