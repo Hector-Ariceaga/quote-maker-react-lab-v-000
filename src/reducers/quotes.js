@@ -7,7 +7,9 @@ export default (state = [], action) => {
       idx = state.indexOf(action.quoteId);
       return [state.slice(0, idx), state.slice(idx + 1)]
     case 'UPVOTE_QUOTE':
-      return [...state, {votes:  state.votes+ 1}]
+      idx = state.indexOf(action.quoteId)
+      quote = state.find(state => state.id === idx)
+      return [...state.quote, {votes:  quote.votes + 1}]
 
     default:
       return state;
