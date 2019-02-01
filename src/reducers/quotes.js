@@ -8,7 +8,7 @@ export default (state = [], action) => {
       return [state.slice(0, idx), state.slice(idx + 1)]
     case 'UPVOTE_QUOTE':
       let quote = state.find(state => state.id === action.quoteId)
-      return [...quote, {votes: quote.votes + 1}]
+      return [...state, {votes: quote.votes + 1}]
     case 'DOWNVOTE_QUOTE':
 
     default:
