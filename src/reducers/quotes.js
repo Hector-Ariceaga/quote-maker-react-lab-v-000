@@ -14,7 +14,9 @@ export default (state = [], action) => {
     case 'DOWNVOTE_QUOTE':
       idx = state.findIndex(quote => quote.id === action.quoteId)
       quote = state[idx]
+      if (quote.votes > 0) {
       return [...state.slice(0, idx), Object.assign({}, quote, {votes: quote.votes - 1}), ...state.slice(idx + 1)]
+      }
     default:
       return state;
   }
